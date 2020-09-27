@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: mkdir
+      run: mkdir /tmp/upload
+
     - name: Start SSH via tmate
       uses: P3TERX/ssh2actions@main
       env:
